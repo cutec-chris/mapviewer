@@ -700,8 +700,8 @@ begin
       end;
       if OneFound and (TimeOut > 200) then
         raise Exception.Create('TimeOut');
-      if mThread then
-        Application.ProcessMessages;
+      //if mThread then
+      //  Application.ProcessMessages;
       if OneFound then
         Sleep(100);
       Inc(TimeOut);
